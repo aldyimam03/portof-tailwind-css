@@ -19,22 +19,27 @@ hamburger.addEventListener("click", function () {
   navMenu.classList.toggle("hidden");
 });
 
-document.getElementById('contactForm').addEventListener('submit', function(e) {
+document.getElementById("contactForm").addEventListener("submit", function (e) {
   e.preventDefault(); // cegah submit default
 
-  let name = document.getElementById('name').value;
-  let email = document.getElementById('email').value;
-  let message = document.getElementById('message').value;
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
 
   // Encode agar aman di URL
-  let subject = encodeURIComponent("Kontak dari Portfolio");
-  let body = encodeURIComponent(
-    `Nama: ${name}\nEmail: ${email}\nPesan: ${message}`
-  );
+  const subject = encodeURIComponent("Kontak dari Portfolio");
+  const body = encodeURIComponent(message);
 
   // Ganti dengan email kamu
-  let mailtoLink = `mailto:aldyimam02@gmail.com?subject=${subject}&body=${body}`;
+  const toEmail = "aldyimam03@gmail.com";
 
-  // Buka di tab baru
-  window.location.href = mailtoLink;
+  // Coba buka Gmail (web) terlebih dahulu
+  const gmailLink = `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=${toEmail}&su=${subject}&body=${body}`;
+  const gmailWindow = window.open(gmailLink, "_blank");
+
+  // Jika popup diblokir, fallback ke mailto
+  if (!gmailWindow) {
+    const mailtoLink = `mailto:${toEmail}?subject=${subject}&body=${body}`;
+    window.location.href = mailtoLink;
+  }
 });
