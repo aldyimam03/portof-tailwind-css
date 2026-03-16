@@ -6,7 +6,7 @@
     <link href="./output.css" rel="stylesheet" />
     <title>Portofolio Aldy Imam Wijaya</title>
   </head>
-  <body>
+  <body class="dark:bg-dark">
     <!-- HEADER SECTION START -->
     <header
       class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
@@ -37,50 +37,63 @@
             </button>
             <nav
               id="nav-menu"
-              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-500 lg:dark:bg-transparent"
             >
               <ul class="block lg:flex">
                 <li class="group">
                   <a
                     href="#home"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
                     >Beranda</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#about"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
                     >Tentang Saya</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#portfolio"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
                     >Portfolio</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#skill"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
                     >Keahlian</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#experience"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
                     >Pengalaman</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#contact"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
                     >Kontak</a
                   >
+                </li>
+                <!-- DARK MODE TOGGLE -->
+                <li class="flex items-center pl-8 mt-3 lg:mt-0">
+                  <div class="flex items-center">
+                    <span class="mr-2 text-sm text-slate-500 dark:text-slate-300">Light</span>
+                    <input type="checkbox" id="dark-toggle" class="hidden" />
+                    <label for="dark-toggle">
+                      <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1 dark:bg-primary">
+                        <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                      </div>
+                    </label>
+                    <span class="ml-2 text-sm text-slate-500 dark:text-slate-300">Dark</span>
+                  </div>
                 </li>
               </ul>
             </nav>
@@ -97,17 +110,17 @@
           <div class="w-full self-center px-4 lg:w-1/2">
             <h1 class="text-base font-semibold text-primary md:text-xl">
               Halo Semua 👋🏻
-              <span class="block font-bold text-dark text-4xl mt-1"
+              <span class="block font-bold text-dark text-4xl mt-1 dark:text-white"
                 >Aldy Imam Wijaya</span
               >
             </h1>
             <h2 class="font-medium text-primary text-lg mb-5 lg:text-2xl">
-              Fresh Graduate <span class="text-dark">|</span> Programmer
-              <span class="text-dark">|</span> Backend Developer
+              Fresh Graduate <span class="text-dark dark:text-white">|</span> Programmer
+              <span class="text-dark dark:text-white">|</span> Backend Developer
             </h2>
             <p class="font-medium text-secondary mb-10 leading-relaxed">
               It does not matter how slowly you go as long as you do not stop
-              <span class="font-semibold text-dark"> ~ Confucius </span>
+              <span class="font-semibold text-dark dark:text-white"> ~ Confucius </span>
             </p>
 
             <a
@@ -139,7 +152,7 @@
               Tentang saya
             </h4>
             <h2
-              class="font-bold text-dark text-3xl mb-5 max-w-full lg:text-4xl"
+              class="font-bold text-dark text-3xl mb-5 max-w-full lg:text-4xl dark:text-white"
             >
               Bio Singkat
             </h2>
@@ -160,7 +173,7 @@
           </div>
           <div class="w-full px-4 lg:w-1/2">
             <h3
-              class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10"
+              class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 dark:text-white"
             >
               Mari Berteman
             </h3>
@@ -239,13 +252,13 @@
     <!-- ABOUT SECTION END -->
 
     <!-- PORTFOLIO START -->
-    <section id="portfolio" class="pt-36 pb-16 bg-slate-100">
+    <section id="portfolio" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-800">
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
             <h2
-              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl"
+              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white"
             >
               Project terbaru
             </h2>
@@ -261,7 +274,7 @@
           >
             <!-- WEB KRS -->
             <div class="mb-12 p-4 md:w-1/3">
-              <div class="rounded-md shadow-md overflow-hidden">
+              <div class="rounded-md shadow-md overflow-hidden bg-white dark:bg-slate-700">
                 <a href="https://github.com/KBMCI/Web-KRS">
                   <img
                     src="src/portofolio/web-krs.png"
@@ -270,9 +283,9 @@
                   />
                 </a>
               </div>
-              <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Web KRS</h3>
+              <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Web KRS</h3>
               <p
-                class="font-medium text-base text-secondary text-justify max-h-40 overflow-hidden"
+                class="font-medium text-base text-secondary text-justify max-h-40 overflow-hidden dark:text-slate-300"
               >
                 Web KRS adalah website sistem informasi yang digunakan untuk
                 melakukan perencanaan jadwal mata kuliah. Dibuat dengan bahasa
@@ -285,7 +298,7 @@
             </div>
             <!-- DERM CARE -->
             <div class="mb-12 p-4 md:w-1/3">
-              <div class="rounded-md shadow-md overflow-hidden">
+              <div class="rounded-md shadow-md overflow-hidden bg-white dark:bg-slate-700">
                 <a href="https://github.com/DermCare/Mobile-Development">
                   <img
                     src="src/portofolio/dermcare.png"
@@ -294,11 +307,11 @@
                   />
                 </a>
               </div>
-              <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+              <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">
                 DermCare Mobile Apps
               </h3>
               <p
-                class="font-medium text-base text-secondary text-justify max-h-40 overflow-hidden"
+                class="font-medium text-base text-secondary text-justify max-h-40 overflow-hidden dark:text-slate-300"
               >
                 DermCare adalah proyek utama yang berfokus pada pengembangan
                 alat bertenaga AI untuk membantu individu dengan penyakit kulit
@@ -316,7 +329,7 @@
             </div>
             <!-- PEMIN -->
             <div class="mb-12 p-4 md:w-1/3">
-              <div class="rounded-md shadow-md overflow-hidden">
+              <div class="rounded-md shadow-md overflow-hidden bg-white dark:bg-slate-700">
                 <a
                   href="https://github.com/RazzaaqZul/Tugas-Akhir-Pemin-A-Kel-9"
                 >
@@ -327,11 +340,11 @@
                   />
                 </a>
               </div>
-              <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+              <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">
                 Integrative Programming Practicum
               </h3>
               <p
-                class="font-medium text-base text-secondary text-justify max-h-40 overflow-hidden"
+                class="font-medium text-base text-secondary text-justify max-h-40 overflow-hidden dark:text-slate-300"
               >
                 Dalam laporan praktikum ini, saya mendokumentasikan pengalaman
                 dan pembelajaran saya dalam menerapkan konsep pemrograman
@@ -345,7 +358,7 @@
             </div>
             <!-- MYCUAN -->
             <div class="mb-12 p-4 md:w-1/3">
-              <div class="rounded-md shadow-md overflow-hidden">
+              <div class="rounded-md shadow-md overflow-hidden bg-white dark:bg-slate-700">
                 <a
                   href="https://www.figma.com/design/sH5xFnNOEyJKHLYAZu2DJ1/MyCuan?node-id=0-1&m=dev"
                 >
@@ -356,9 +369,9 @@
                   />
                 </a>
               </div>
-              <h3 class="font-semibold text-xl text-dark mt-5 mb-3">My Cuan</h3>
+              <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">My Cuan</h3>
               <p
-                class="font-medium text-base text-secondary text-justify max-h-40 overflow-hidden"
+                class="font-medium text-base text-secondary text-justify max-h-40 overflow-hidden dark:text-slate-300"
               >
                 My Cuan adalah aplikasi mobile yang berfokus pada pengelolaan
                 keuangan pribadi, membantu pengguna dalam melacak pemasukan dan
@@ -371,7 +384,7 @@
             </div>
             <!-- INVENTORY WEB -->
             <div class="mb-12 p-4 md:w-1/3">
-              <div class="rounded-md shadow-md overflow-hidden">
+              <div class="rounded-md shadow-md overflow-hidden bg-white dark:bg-slate-700">
                 <a
                   href="https://github.com/aldyimam03/inventory-web/tree/development"
                 >
@@ -382,11 +395,11 @@
                   />
                 </a>
               </div>
-              <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+              <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">
                 Inventory Web
               </h3>
               <p
-                class="font-medium text-base text-secondary text-justify max-h-40 overflow-hidden"
+                class="font-medium text-base text-secondary text-justify max-h-40 overflow-hidden dark:text-slate-300"
               >
                 Inventory Web adalah aplikasi berbasis web untuk mengelola
                 inventaris, mulai dari produk dan varian produk hingga
@@ -405,7 +418,7 @@
             </div>
             <!-- ABSENSI API (ONGOING) -->
             <div class="mb-12 p-4 md:w-1/3">
-              <div class="rounded-md shadow-md overflow-hidden">
+              <div class="rounded-md shadow-md overflow-hidden bg-white dark:bg-slate-700">
                 <a href="https://github.com/aldyimam03/absensi-api">
                   <img
                     src="src/portofolio/absensi-api.jpg"
@@ -414,10 +427,10 @@
                   />
                 </a>
               </div>
-              <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+              <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">
                 Absensi API
               </h3>
-              <p class="font-medium text-base text-secondary text-justify">
+              <p class="font-medium text-base text-secondary text-justify dark:text-slate-300">
                 Absensi API adalah REST API Absensi Karyawan menggunakan Node.js
                 dan Express dengan pendekatan clean architecture serta
                 menggunakan MySQL sebagai basis data. Pada tahap awal ini saya
@@ -543,13 +556,13 @@
     <!-- SKILL SECTION END -->
 
     <!-- EXPERIENCE SECTION START -->
-    <section id="experience" class="pt-36 pb-32 bg-slate-100">
+    <section id="experience" class="pt-36 pb-32 bg-slate-100 dark:bg-dark">
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-semibold text-lg text-primary mb-2">Pengalaman</h4>
             <h2
-              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl"
+              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white"
             >
               Organisasi dan Kepanitiaan
             </h2>
@@ -563,7 +576,7 @@
         </div>
         <div class="flex flex-wrap">
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
               <div class="h-52">
                 <img
                   src="src/oganisasi/2.jpeg"
@@ -577,13 +590,13 @@
                 <h3>
                   <a
                     href=""
-                    class="block mb-3 font-semibold text-dark text-xl hover:text-primary truncate"
+                    class="block mb-3 font-semibold text-dark text-xl hover:text-primary truncate dark:text-white"
                     >Staff Muda KBMTI (Keluarga Besar Mahasiswa Teknologi
                     Informasi)</a
                   >
                 </h3>
                 <p
-                  class="font-medium text-base text-secondary text-s mb-6 text-justify"
+                  class="font-medium text-base text-secondary text-s mb-6 text-justify dark:text-slate-300"
                 >
                   Selama menjadi staff muda, saya berkontribusi dalam berbagai
                   kegiatan yang mendukung pengembangan keorganisasian mahasiswa
@@ -598,7 +611,7 @@
             </div>
           </div>
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
               <div class="h-52">
                 <img
                   src="src/oganisasi/1.jpeg"
@@ -612,12 +625,12 @@
                 <h3>
                   <a
                     href=""
-                    class="block mb-3 font-semibold text-dark text-xl hover:text-primary truncate"
+                    class="block mb-3 font-semibold text-dark text-xl hover:text-primary truncate dark:text-white"
                     >Staff Ahli BEM FILKOM</a
                   >
                 </h3>
                 <p
-                  class="font-medium text-base text-secondary text-s mb-6 text-justify"
+                  class="font-medium text-base text-secondary text-s mb-6 text-justify dark:text-slate-300"
                 >
                   Sebagai Staff Ahli, saya mendukung kegiatan internal BEM
                   FILKOM dengan peran strategis dalam pengambilan keputusan dan
@@ -632,7 +645,7 @@
             </div>
           </div>
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
               <div class="h-52">
                 <img
                   src="src/oganisasi/ketang.jpeg"
@@ -646,12 +659,12 @@
                 <h3>
                   <a
                     href=""
-                    class="block mb-3 font-semibold text-dark text-xl hover:text-primary truncate"
+                    class="block mb-3 font-semibold text-dark text-xl hover:text-primary truncate dark:text-white"
                     >Ketua Angkatan Teknologi Informasi 2021</a
                   >
                 </h3>
                 <p
-                  class="font-medium text-base text-secondary text-s mb-6 text-justify"
+                  class="font-medium text-base text-secondary text-s mb-6 text-justify dark:text-slate-300"
                 >
                   Sebagai Ketua Angkatan, saya memimpin seluruh mahasiswa
                   angkatan 2021, mengorganisir berbagai kegiatan akademik maupun
@@ -666,7 +679,7 @@
             </div>
           </div>
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
               <div class="h-52">
                 <img
                   src="src/oganisasi/hology.JPG"
@@ -680,12 +693,12 @@
                 <h3>
                   <a
                     href=""
-                    class="block mb-3 font-semibold text-dark text-xl hover:text-primary truncate"
+                    class="block mb-3 font-semibold text-dark text-xl hover:text-primary truncate dark:text-white"
                     >Koordinator Humas HOLOGY 6.0</a
                   >
                 </h3>
                 <p
-                  class="font-medium text-base text-secondary text-s mb-6 text-justify"
+                  class="font-medium text-base text-secondary text-s mb-6 text-justify dark:text-slate-300"
                 >
                   Sebagai Koordinator Humas, saya bertanggung jawab dalam
                   komunikasi eksternal serta mempromosikan event secara efektif.
@@ -704,13 +717,13 @@
     <!-- EXPERIENCE SECTION END -->
 
     <!-- CONTACT SECTION START -->
-    <section id="contact" class="pt-36 pb-40">
+    <section id="contact" class="pt-36 pb-40 dark:bg-slate-800">
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-semibold text-lg text-primary mb-2">Kontak</h4>
             <h2
-              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl"
+              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white"
             >
               Hubungi Saya
             </h2>
@@ -729,7 +742,7 @@
               <input
                 type="text"
                 id="name"
-                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
+                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary dark:bg-slate-700 dark:text-white"
               />
             </div>
             <div class="w-full px-4 mb-8">
