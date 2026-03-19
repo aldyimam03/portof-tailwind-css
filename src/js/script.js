@@ -1,13 +1,43 @@
-// Navbar Fixed
+// Navbar Fixed & Back to Top & Scroll Spy
 window.onscroll = function () {
   const header = document.querySelector("header");
   const fixedNav = header.offsetTop;
+  const toTop = document.querySelector("#back-to-top");
 
+  // Navbar fixed dan Back to Top Visibility
   if (window.pageYOffset > fixedNav) {
     header.classList.add("navbar-fixed");
+    toTop.classList.remove("hidden");
+    toTop.classList.add("flex");
   } else {
     header.classList.remove("navbar-fixed");
+    toTop.classList.remove("flex");
+    toTop.classList.add("hidden");
   }
+
+  // Scroll Spy Logic
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll("header nav ul li a");
+
+  let current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    // Berikan toleransi jarak sekitar sepertiga atau seperempat layar
+    if (pageYOffset >= sectionTop - sectionHeight / 3) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach((a) => {
+    a.classList.remove("text-primary", "font-bold", "dark:text-primary");
+    a.classList.add("text-dark", "dark:text-white");
+    if (a.getAttribute("href").includes(current) && current !== "") {
+      a.classList.remove("text-dark", "dark:text-white");
+      a.classList.add("text-primary", "font-bold", "dark:text-primary");
+    }
+  });
 };
 
 // Hamburger
